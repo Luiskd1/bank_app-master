@@ -213,7 +213,7 @@ const RegisterPage = () => {
                   </AlertDialogHeader>
                   <AlertDialogFooter>
                     <AlertDialogCancel>Cancel</AlertDialogCancel>
-                    <AlertDialogAction>Continue</AlertDialogAction>
+                    <AlertDialogAction><Link href={'/auth/login'}>Continue</Link></AlertDialogAction>
                   </AlertDialogFooter>
                 </AlertDialogContent>
               )}

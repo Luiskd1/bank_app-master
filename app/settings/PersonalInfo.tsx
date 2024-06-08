@@ -22,7 +22,7 @@ export default function PersonalInfo() {
                             <CardContent className="space-y-6">
                                 <div className="flex items-center gap-4">
                                     <Avatar className="w-20 h-20 border">
-                                        <Image src="https://i.pravatar.cc/300" alt="imageAvatar " width={20} height={20} />
+                                        {/* <Image src="https://i.pravatar.cc/300" alt="imageAvatar " width={20} height={20} /> */}
                                         <AvatarFallback>JM</AvatarFallback>
                                     </Avatar>
                                     <Button variant="outline">

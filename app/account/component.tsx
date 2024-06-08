@@ -1,13 +1,16 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import useApi from '@/hooks/useApi'
 import React from 'react'
 
 const Component = () => {
+
+  const {data} = useApi()
   return (
     <div className="flex flex-col h-full p-4 ">
       <Card className="p-6 flex items-center justify-between">
         <div className="space-y-1">
-          <h1 className="text-2xl font-bold">John Doe</h1>
+          <h1 className="text-2xl font-bold">{data?.data?.session?.user.user_metadata.name}</h1>
           <p className="text-gray-500">Total Balance: $12,345.67</p>
         </div>
         <Button variant="default" size="sm">

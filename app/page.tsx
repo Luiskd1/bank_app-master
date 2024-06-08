@@ -4,6 +4,7 @@ import noShow from "@/hooks/noshow";
 import { useTheme } from "next-themes";
 import { noSSR } from "next/dynamic";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -41,8 +42,8 @@ export default function Home() {
 
       <div className='flex justify-center items-center'>
 
-        <a
-          href="/dashboard"
+        <Link
+          href="/auth/login"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           // target="_blank"
           rel="noopener noreferrer"
@@ -56,7 +57,7 @@ export default function Home() {
           <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
             A BANK application built with Next.js and Supabase
           </p>
-        </a>
+        </Link>
 
       </div>
 

@@ -296,10 +296,10 @@ function Transfersa() {
                 <Checkbox id="terms" />
                 <label
                   htmlFor="terms"
-                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex"
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex pl-3"
                 >
                   i agree to above to the
-                  <p className="font-bold"> conditions</p>
+                  <p className="font-bold pl-1"> conditions</p>
                 </label>
               </div>
               {/* agregamos ahora el boton */}
