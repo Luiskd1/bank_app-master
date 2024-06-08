@@ -13,7 +13,6 @@ import Image from 'next/image';
 const SideBar = () => {
     const { data } = useApi();
     const { toggleSidebar, isSidebarOpen } = useSidebar();
-    console.log(data)
     return (
         <div className={`${isSidebarOpen ? 'hidden sm:flex' : 'flex w-1/6'} sm:flex hidden`}>
             {data?.data.session && (
