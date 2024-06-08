@@ -4,9 +4,7 @@ import PersonalInfo from "./PersonalInfo";
 import Redirect from '@/hooks/redirect';
 
 const Settings = () => {
-  useEffect(() => {
-    Redirect();
-  }, []);
+
   return (
     <div>
           <PersonalInfo/>

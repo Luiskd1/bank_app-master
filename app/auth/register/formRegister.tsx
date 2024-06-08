@@ -240,7 +240,7 @@ const RegisterPage = () => {
       </div>
       <div className="hidden bg-muted lg:block">
         <Image
-          src="https://source.unsplash.com/random/1000x1000"
+          src="https://picsum.photos/1000"
           alt="Imageregister"
           width="1920"
           height="1080"

@@ -4,10 +4,13 @@ import Cards from "./cards"
 import Chard from "./chard"
 import TransferRecent from "../../nouse/transferRecent"
 import Transfer from "./transfer"
+import Redirect from "@/hooks/redirect"
+import { useEffect } from "react"
 
 
 
 export default function ComponentDash() {
+
 
 
     return (

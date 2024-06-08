@@ -32,7 +32,7 @@ const ForgetPage = () => {
             </div>
             <div className="hidden h-screen bg-muted lg:block ">
                 <Image
-                    src="https://source.unsplash.com/random/1000x1000"
+                    src="https://picsum.photos/1000"
                     alt="ImageForget"
                     width="1920"
                     height="1080"

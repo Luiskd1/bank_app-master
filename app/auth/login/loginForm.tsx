@@ -28,7 +28,11 @@ const LoginPage = () => {
   })
 
   const { mutate } = useMutation({ mutationFn: (data: userLogin) => SingInUser(data) })
+
   const { refetch } = useApi()
+  
+  
+
 
   const onShowPassword = () => {
     setShowPasswords(!showpasswords)
@@ -43,7 +47,7 @@ const LoginPage = () => {
           console.log(error.error)
         }
         toast({ description: 'successfully logged in' })
-        route.push('/')
+        route.push('/dashboard')
         refetch()
       }
     })
@@ -51,14 +55,14 @@ const LoginPage = () => {
   }
 
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    async () => {
-      const { data: { session } } = await GetSession()
-      if (session) route.push('/')
-    }
+  //   async () => {
+  //     const { data: { session } } = await GetSession()
+  //     if (session) route.push('/dashboard')
+  //   }
 
-  }, [route])
+  // }, [route])
 
 
 
@@ -135,7 +139,7 @@ const LoginPage = () => {
       </div>
       <div className="hidden h-screen bg-muted lg:block ">
         <Image
-          src="https://source.unsplash.com/random/1000x1000"
+          src="https://picsum.photos/1000"
           alt="Imagelogin"
           width="1920"
           height="1080"

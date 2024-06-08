@@ -4,10 +4,7 @@ import Component from './htable'
 import Redirect from '@/hooks/redirect'
 
 const HistoryPage = () => {
-  useEffect(() => {
-    Redirect();
-  }, []);
-  
+
 
   return (
     <div>

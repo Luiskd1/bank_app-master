@@ -4,6 +4,7 @@ import { GetSession } from '@/app/auth/actions'
 import { useQuery } from '@tanstack/react-query'
 
 const useApi = () => {
+
   
     return  useQuery({
         queryKey: ["session"],
