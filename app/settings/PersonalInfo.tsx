@@ -11,7 +11,7 @@ export default function PersonalInfo() {
     return (
         <div className="flex w-full h-full items-center justify-center">
             <div className="max-w-full mx-auto m-4 md:px-6 ">
-                <div className="flex flex-col justify-center md:grid-cols-2 w-full gap-4">
+                <div className="flex flex-col  justify-center sm:flex-row md:grid-cols-2 w-full gap-4">
                     <div className="space-y-2">
                         <Card>
                             <CardHeader>
