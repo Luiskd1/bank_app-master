@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -11,7 +12,7 @@ const ForgetPage = () => {
                 <div className="space-y-2 text-center ">
                     <h1 className="text-3xl font-bold">Forgot Password</h1>
                     <p className="text-gray-500 dark:text-gray-400">
-                        Enter your email address and we'll send you a link to reset your password.
+                        Enter your email address and we&apos;ll send you a link to reset your password.
                     </p>
                 </div>
                 <form className="space-y-4">
@@ -30,9 +31,9 @@ const ForgetPage = () => {
                 </div>
             </div>
             <div className="hidden h-screen bg-muted lg:block ">
-                <img
+                <Image
                     src="https://source.unsplash.com/random/1000x1000"
-                    alt="Image"
+                    alt="ImageForget"
                     width="1920"
                     height="1080"
                     className="h-full w-full object-cover dark:brightness-[0.4]  "

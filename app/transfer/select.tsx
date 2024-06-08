@@ -26,7 +26,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Banknote, Currency, LogOut, Wallet } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@nextui-org/react";
-import toast, { Toaster } from "react-hot-toast";
 
 const FormSchema = z.object({
   account: z.string({
@@ -61,14 +60,11 @@ export default function SelectForm() {
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
     console.log(data)
-    toast.success(`se subio toda la data ${data}`);
   }
 
   return (
     <Form {...form}>
-      <Toaster
-        position="top-center"
-      />
+  
       <form onSubmit={form.handleSubmit(onSubmit)} className=" w-full flex-col">
         <Card className="">
           <CardHeader>

@@ -26,6 +26,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel,
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 import { Menubar, MenubarContent, MenubarMenu, MenubarTrigger } from "./ui/menubar";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
+import Image from "next/image";
 
 const Header = () => {
   const { data, refetch } = useApi();
@@ -46,7 +47,7 @@ const Header = () => {
               </SheetTrigger>
               <SheetContent side={"left"} className="pb-16">
                 <div className="flex justify-center items-center w-full ">
-                  <img src="logo.png" className='rounded-full mr-3 dark:invert' height={40} width={40} />
+                  <Image src="logo.png" className='rounded-full mr-3 dark:invert' height={40} width={40} alt="logoheader"/>
                   <h1>
                     <strong>Bank</strong> Dev
                   </h1>
@@ -103,7 +104,7 @@ const Header = () => {
                 size="icon"
                 className="overflow-hidden rounded-full"
               >
-                <img
+                <Image
                   src="https://avatar.iran.liara.run/public/35"
                   width={36}
                   height={36}

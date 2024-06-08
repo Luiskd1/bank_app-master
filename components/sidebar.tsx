@@ -6,6 +6,7 @@ import { Separator } from './ui/separator';
 import useApi from '@/hooks/useApi';
 import { useSidebar } from '@/hooks/useSideBar';
 import Hbutton from './other/hbutton';
+import Image from 'next/image';
 
 
 
@@ -21,7 +22,7 @@ const SideBar = () => {
                     <div className='flex justify-between items-center ml-5 h-[6.5%]'>
                         <Hbutton onClick={toggleSidebar} />
                         {!isSidebarOpen ? <h1><strong>BANK</strong> APP</h1> : ''}
-                        {!isSidebarOpen ? <img src="logo.png" className='rounded-full mr-3 dark:invert' height={50} width={50} /> : ''}
+                        {!isSidebarOpen ? <Image src="/logo.png" className='rounded-full mr-3 dark:invert' height={50} width={50} alt='logo' /> : ''}
 
                     </div>
                     <Separator orientation='horizontal' />

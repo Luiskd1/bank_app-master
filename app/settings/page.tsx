@@ -1,10 +1,12 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import PersonalInfo from "./PersonalInfo";
 import Redirect from '@/hooks/redirect';
 
 const Settings = () => {
-  Redirect()
+  useEffect(() => {
+    Redirect();
+  }, []);
   return (
     <div>
           <PersonalInfo/>

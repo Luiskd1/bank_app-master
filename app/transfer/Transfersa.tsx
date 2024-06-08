@@ -40,6 +40,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 import { Checkbox } from "@/components/ui/checkbox";
+import Image from "next/image";
 
 const FormSchema = z.object({
   account: z.string({
@@ -370,11 +371,12 @@ function Transfersa() {
               <Link href="#">Bankdev Mobile App</Link>
             </div>
             <div className="   flex items-center justify-center mt-5">
-              <img
+              <Image
                 className="  h-auto justify-center  dark:brightness-[0.6]"
                 width={300}
+                height={150}
                 alt="NextUI Fruit Image with Zoom"
-                src="fasdfa.jpg"
+                src="/fasdfa.jpg"
               />
             </div>
             <Button className="flex w-full text-center mt-5 font-black ">

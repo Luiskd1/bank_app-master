@@ -16,6 +16,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useToast } from "@/components/ui/use-toast";
 import { GetSession, SingInUser } from "../actions";
 import GoogleButton from "@/components/googlebutton";
+import Image from "next/image";
 
 
 const LoginPage = () => {
@@ -57,7 +58,7 @@ const LoginPage = () => {
       if (session) route.push('/')
     }
 
-  }, [])
+  }, [route])
 
 
 
@@ -133,9 +134,9 @@ const LoginPage = () => {
         </div>
       </div>
       <div className="hidden h-screen bg-muted lg:block ">
-        <img
+        <Image
           src="https://source.unsplash.com/random/1000x1000"
-          alt="Image"
+          alt="Imagelogin"
           width="1920"
           height="1080"
           className="h-full w-full object-cover dark:brightness-[0.4]  "

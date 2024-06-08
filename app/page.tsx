@@ -3,6 +3,7 @@ import SwitchTheme from "@/components/switchTheme";
 import noShow from "@/hooks/noshow";
 import { useTheme } from "next-themes";
 import { noSSR } from "next/dynamic";
+import Image from "next/image";
 
 export default function Home() {
   const { theme, } = useTheme()
@@ -24,7 +25,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             Deploy {" "}
-            <img
+            <Image
               src="/vercel.svg"
               alt="Vercel Logo"
               className="dark:invert"
@@ -58,7 +59,7 @@ export default function Home() {
       </div>
 
       <div className="mb-32 flex text-center gap-5 items-center justify-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <img
+        <Image
           src="/next.svg"
           alt="Next Logo"
           className="dark:invert"
@@ -68,7 +69,7 @@ export default function Home() {
 
         <strong className="text-3xl">+</strong>
         {theme === 'dark' || theme === 'system' || theme === undefined ?
-          <img
+          <Image
             src="supa2.svg"
             alt="Supa Dark Logo"
             className="dark"
@@ -76,7 +77,7 @@ export default function Home() {
             height={54}
           />
           :
-          <img
+          <Image
             src="supa.svg"
             alt="Supa Light Logo"
             className={theme === undefined ? 'invert' : ''}

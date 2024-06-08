@@ -1,10 +1,13 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Component from './htable'
 import Redirect from '@/hooks/redirect'
 
 const HistoryPage = () => {
-  Redirect()
+  useEffect(() => {
+    Redirect();
+  }, []);
+  
 
   return (
     <div>

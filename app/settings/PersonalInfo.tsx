@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Switch } from "@/components/ui/switch"
 import Redirect from "@/hooks/redirect"
 import { AtSignIcon, BellIcon, CameraIcon, EyeOffIcon, PlusIcon, TrashIcon } from "@/components/config/icons"
+import Image from "next/image"
 
 export default function PersonalInfo() {
     return (
@@ -21,7 +22,7 @@ export default function PersonalInfo() {
                             <CardContent className="space-y-6">
                                 <div className="flex items-center gap-4">
                                     <Avatar className="w-20 h-20 border">
-                                        <img src="https://i.pravatar.cc/300" />
+                                        <Image src="https://i.pravatar.cc/300" alt="imageAvatar " width={20} height={20} />
                                         <AvatarFallback>JM</AvatarFallback>
                                     </Avatar>
                                     <Button variant="outline">
