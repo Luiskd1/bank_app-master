@@ -34,17 +34,13 @@ export async function signInWithGoogle() {
     provider: "google",
 
     options: {
-    redirectTo: 'http://localhost:3000/auth/callback',
+    redirectTo: 'https://bank-app-master-git-main-luiskd1s-projects.vercel.app/auth/callback',
       queryParams: {
         access_type: "offline",
         prompt: "consent",
       },
     },
   });
-
-  console.log(data)
-
-
 
 
   if (error) {
