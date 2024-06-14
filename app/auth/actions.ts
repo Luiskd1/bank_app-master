@@ -52,10 +52,7 @@ export async function signInWithGoogle() {
 
 }
 
-export const createUserGoogle = async () => {
-  const supabase = createClient();
 
-}
 
 
 export const GetSession = async () => {
