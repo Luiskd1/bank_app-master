@@ -26,16 +26,67 @@ export const SingInUser = async (info: userLogin) => {
 }
 
 
+export async function signInWithGoogle() {
+  const supabase = createClient();
+  
+  
+  const { data, error } = await supabase.auth.signInWithOAuth({
+    provider: "google",
+
+    options: {
+    redirectTo: 'http://localhost:3000/auth/callback',
+      queryParams: {
+        access_type: "offline",
+        prompt: "consent",
+      },
+    },
+  });
+
+  console.log(data)
 
 
-export const GetSession = async () => {
 
-  const supabase = createClient()
-  const session = supabase.auth.getSession()
-  return session
+
+  if (error) {
+    redirect("/error");
+  }
+
+  redirect(data.url);
+  
 
 }
 
+export const createUserGoogle = async () => {
+  const supabase = createClient();
+
+}
+
+
+
+
+
+
+
+
+export const GetSession = async () => {
+  const supabase = createClient();
+  try {
+    const session = await supabase.auth.getSession();
+    return session;
+  } catch (error:any) {
+    console.error('Error al obtener la sesión:', error.message);
+    return null;
+  }
+};
+
+export async function handleSignInWithGoogle() {
+  const supabase = createClient();
+  const { data, error } = await supabase.auth.signInWithIdToken({
+    provider: 'google',
+    token: "e40b27f6-8a1a-4399-bde6-dfb12d3b313d",
+  })
+  console.log(data)
+}
 
 
 export const CreateData = async (info: userRegister) => {
@@ -67,7 +118,7 @@ export const CreateData = async (info: userRegister) => {
       console.log(bankinfo)
       console.log(error)
 
-
+      // hay que agregar esta logica creo// pero no con la de google kbezon ._. 
     return results
   } catch (error) {
     console.log('SERVER ERROR', error)

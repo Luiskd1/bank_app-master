@@ -20,6 +20,7 @@ const Cards = () => {
     const dataunique = datauser?.data.session?.user.id // id session
     const firstdatatomada = dataAll?.filter((x: any) => x.user_id === dataunique)
     const firstdatatomadasaldo = firstdatatomada?.map((x: Bankschemadata) => x.saldo)
+    console.log(firstdatatomadasaldo)
     return (
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             {/* CURRENT BALANCE */}
