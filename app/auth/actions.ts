@@ -58,12 +58,6 @@ export const createUserGoogle = async () => {
 }
 
 
-
-
-
-
-
-
 export const GetSession = async () => {
   const supabase = createClient();
   try {

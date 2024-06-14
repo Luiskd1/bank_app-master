@@ -1,7 +1,6 @@
 'use client'
-import React, { useEffect } from 'react'
+import React from 'react'
 import PersonalInfo from "./PersonalInfo";
-import Redirect from '@/hooks/redirect';
 
 const Settings = () => {
 

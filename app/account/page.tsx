@@ -1,12 +1,9 @@
 'use client'
-import React, { useEffect } from 'react'
+import React from 'react'
 import Component from './component'
-import Redirect from '@/hooks/redirect'
 
 const AccountPage = () => {
-  useEffect(() => {
-    Redirect();
-  }, []);
+ 
   return (
     <div>
       <Component/>

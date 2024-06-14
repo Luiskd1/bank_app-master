@@ -1,8 +1,6 @@
 'use client'
 import SwitchTheme from "@/components/switchTheme";
-import noShow from "@/hooks/noshow";
 import { useTheme } from "next-themes";
-import { noSSR } from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 

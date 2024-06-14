@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Switch } from "@/components/ui/switch"
-import Redirect from "@/hooks/redirect"
 import { AtSignIcon, BellIcon, CameraIcon, EyeOffIcon, PlusIcon, TrashIcon } from "@/components/config/icons"
 import Image from "next/image"
 

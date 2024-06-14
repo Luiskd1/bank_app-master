@@ -1,11 +1,6 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
-import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from "@/components/ui/table"
 import Cards from "./cards"
 import Chard from "./chard"
-import TransferRecent from "../../nouse/transferRecent"
 import Transfer from "./transfer"
-import Redirect from "@/hooks/redirect"
-import { useEffect } from "react"
 
 
 

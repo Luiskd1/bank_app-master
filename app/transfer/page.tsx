@@ -1,8 +1,6 @@
-import Redirect from "@/hooks/redirect"
 import Transfersa from "./Transfersa"
 
 const FoundTransferPage = () => {
-  Redirect()
 
   return (
     <div>

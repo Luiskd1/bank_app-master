@@ -1,6 +1,5 @@
 'use client'
-import React, { useEffect } from 'react'
-import Redirect from '@/hooks/redirect';
+import React from 'react'
 import ComponentDash from './component';
 
 
