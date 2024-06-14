@@ -34,7 +34,7 @@ export async function signInWithGoogle() {
     provider: "google",
 
     options: {
-    redirectTo: '/auth/callback',
+    redirectTo: 'https://bank-app-master.vercel.app/auth/callback',
       queryParams: {
         access_type: "offline",
         prompt: "consent",
